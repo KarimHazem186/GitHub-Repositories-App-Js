@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha512-0S+nbAYis87iX26mmj/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>GitHub App</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1 class="app-title">GitHub</h1>
+        </header>
+
+        <div class="content">
+            <div class="left">
+                <div class="card">
+                    <h2>Fetch Repos by Username</h2>
+                    <form id="user-form">
+                        <label>username</label>
+                        <input type="text" id="username">
+                        <button type="submit"class="btn-el">Get Repos</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <h2>Fetch Repos by Languages</h2>
+                    <div class="languages">
+                        <button data-lng="javascript"class="btn-el">JS</button>
+                        <button data-lng="php"class="btn-el">PHP</button>
+                        <button data-lng="css"class="btn-el">CSS</button>
+                        <button data-lng="html"class="btn-el">HTML</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <p id="search-term"></p>
+                <div id="repos">
+                    <!-- <a href="#" class="repo-item">
+                        <span>Name of Repo</span>
+                        <span>200 issues number</span>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
